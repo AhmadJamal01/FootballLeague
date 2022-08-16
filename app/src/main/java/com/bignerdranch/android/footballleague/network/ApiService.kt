@@ -18,7 +18,7 @@ private val retrofit = Retrofit.Builder()
 
 interface ApiService {
     @GET("leagues")
-    suspend fun getLeagues(): String
+    suspend fun getLeagues(): List<ApiModel>
 }
 
 object LeagueApi{
